@@ -1,0 +1,21 @@
+services:
+  - type: worker
+    name: habesha-game-store-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        value: "8863357122"
+      - key: STORE_NAME
+        value: "Habesha Game Store"
+      - key: TELEBIRR_PHONE
+        value: "0906869740"
+      - key: TELEBIRR_NAME
+        value: "Tekalegn Tarku"
+      - key: CBE_ACCOUNT
+        value: "1000670104994"
+      - key: CBE_NAME
+        value: "Mr. Melaku Mesay"
